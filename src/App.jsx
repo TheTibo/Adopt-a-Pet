@@ -1,9 +1,8 @@
-import style from '../styles/App.module.css'
-
+import LikeButton from "./components/LikeButton"
 function App() {
   return (
     <>
-
+      <LikeButton />
     </>
   )
 }
