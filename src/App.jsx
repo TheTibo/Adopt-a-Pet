@@ -1,4 +1,5 @@
 import LikeButton from "./components/LikeButton"
+
 function App() {
   return (
     <>
