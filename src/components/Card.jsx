@@ -1,5 +1,5 @@
 import AdoptionButton from "./AdoptionButton";
-
+import LikeButton from './LikeButton'
 import style from "../styles/Card.module.css";
 
 // eslint-disable-next-line react/prop-types
@@ -13,6 +13,9 @@ function Card({ name, age, picture, race, sex }) {
             backgroundImage: `url('${picture}')`,
           }}
         ></div>
+        <figcaption style={{display: "flex", flexDirection: "row", justifyContent: "flex-end"}}>
+          <LikeButton />
+        </figcaption>
       </div>
       <div className={style["card-body"]}>
         <h2>{name}</h2>
