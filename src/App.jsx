@@ -1,5 +1,6 @@
 import Filter from "./components/Filter";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 
 import petToAdopt from "./data/petToAdopt.js";
 
@@ -14,23 +15,26 @@ function App() {
   return (
     <>
       <Header />
+      <main  style={{flexGrow: "1"}}>
+        <Filter option={option} setOption={setOption} />
 
-      <Filter option={option} setOption={setOption} />
+        <div className={style["card-list"]}>
+          {petToAdopt
+            .filter((pet) => option === "All" || pet.type === option)
+            .map((pet) => (
+              <Card
+                key={pet.name}
+                name={pet.name}
+                age={pet.age}
+                picture={pet.picture}
+                race={pet.race}
+                sex={pet.sex}
+              />
+            ))}
+        </div>
+      </main>
 
-      <div className={style["card-list"]}>
-        {petToAdopt
-          .filter((pet) => option === "All" || pet.type === option)
-          .map((pet) => (
-            <Card
-              key={pet.name}
-              name={pet.name}
-              age={pet.age}
-              picture={pet.picture}
-              race={pet.race}
-              sex={pet.sex}
-            />
-          ))}
-      </div>
+      <Footer />
     </>
   );
 }

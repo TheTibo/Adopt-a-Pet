@@ -1,7 +1,13 @@
-
 * {
   box-sizing: border-box;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 body {
   padding: 0;

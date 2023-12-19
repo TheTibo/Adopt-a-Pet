@@ -15,21 +15,22 @@ function Card({ name, age, picture, race, sex }) {
   return (
     <div className={style.card}>
       <div className={style["card-header"]}>
-        {animalIndex > 0 && (
-          <button className={style.imgPrevious} onClick={() => remove1()}>
-            Previous
-          </button>
-        )}
-
-        {animalIndex < 1 && (
-          <button className={style.imgNext} onClick={() => add1()}>
-            Next
-          </button>
-        )}
         <div
           className={style["card-img"]}
           style={{ backgroundImage: `url('${picture[animalIndex]}')` }}
-        ></div>
+        >
+          {animalIndex > 0 && (
+            <button className={style.imgPrevious} onClick={() => remove1()}>
+              Previous
+            </button>
+          )}
+
+          {animalIndex < 1 && (
+            <button className={style.imgNext} onClick={() => add1()}>
+              Next
+            </button>
+          )}
+        </div>
         <figcaption
           style={{
             display: "flex",
