@@ -1,0 +1,24 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-img {
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("http://placekitten.com/200/300");
+  height: 200px;
+  width: 150px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 20px;
+}
+.card-body h2, h3 {
+  margin: 0;
+}
