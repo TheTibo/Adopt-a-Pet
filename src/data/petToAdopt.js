@@ -43,6 +43,39 @@ const petToAdopt = [
     race: "Shiba inu",
     sex: "Male",
   },
+  {
+    type: "Cats",
+    name: "Kinder  ",
+    age: "1 year",
+    picture: [
+      "https://www.zooplus.fr/magazine/wp-content/uploads/2018/11/chat-europeen-768x512.jpg",
+      "https://www.assuropoil.fr/wp-content/uploads/2021/09/chat-de-gouttiere-race.jpeg",
+    ],
+    race: "European",
+    sex: "Male",
+  },
+  {
+    type: "Dogs",
+    name: "Dolly",
+    age: "4 months",
+    picture: [
+      "https://i.pinimg.com/originals/65/d3/59/65d3590fe1315cac4067a6d2e5106bcc.jpg",
+      "https://www.guide-du-chien.com/wp-content/uploads/2016/07/sante-Dogue-Allemand.jpg",
+    ],
+    race: "Great Dane",
+    sex: "Female",
+  },
+  {
+    type: "Cats",
+    name: "Holy",
+    age: "3 months",
+    picture: [
+      "https://i.pinimg.com/originals/76/b0/32/76b032a12fe8701dcc910d3d37cce360.jpg",
+      "https://media.istockphoto.com/id/1280045774/fr/photo/maine-coon-dans-le-jardin.jpg?s=612x612&w=0&k=20&c=a40u36drgcpcXqgkHQxY2q-zfHK4uMszrpcrPj1XMAE=",
+    ],
+    race: "MaineCoon",
+    sex: "Male",
+  },
 ];
 
 export default petToAdopt;
