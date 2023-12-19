@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 1rem;
+    margin-top: 1rem;
+    background-color: gray;
+    opacity: 0.8;
+}
+
+.copyright  {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.footer_nav {
+    display: flex;
+    list-style: none;
+}
+
+.link {
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    color: white;
+}

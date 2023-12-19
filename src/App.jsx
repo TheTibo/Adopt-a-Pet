@@ -1,5 +1,6 @@
 import Filter from "./components/Filter";
 import Card from "./components/Card";
+import Footer from "./components/Footer"
 
 import petToAdopt from "./data/petToAdopt.js";
 
@@ -31,6 +32,7 @@ function App() {
             />
           ))}
       </div>
+      <Footer />
     </>
   );
 }
