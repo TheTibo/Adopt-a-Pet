@@ -22,3 +22,17 @@
 .card-body h2, h3 {
   margin: 0;
 }
+
+.imgNext{
+border-radius: 8px;
+  border: 1px solid gray;
+  position: absolute;
+}
+
+.imgPrevious {
+  background-color: salmon;
+  color: white;
+  border-radius:8px;
+  position: absolute;
+
+}
